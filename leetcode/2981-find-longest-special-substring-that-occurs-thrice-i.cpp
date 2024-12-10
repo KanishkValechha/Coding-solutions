@@ -50,33 +50,33 @@ It can be shown that the maximum length achievable is 1.
 s consists of only lowercase English letters.
  */
 
-        for(auto i: f){
-            if(i.second >= 3){
-        }
-            }
-                }
-                    f[a]++;
-                if(x.size() == 1){
-                }
-                    x.insert(a[l]);
-                for(int l=0; l<a.length(); l++){
-                }
-                set<char> x;
-                    a.push_back(s[k]);
-                string a;
-                for(int k = i; k<=j; k++){
-            for(int j=i; j<s.length(); j++){
-        map<string, int> f;
-        for(int i=0; i<s.length(); i++){
-                int x=i.first.length();
-    int maximumLength(string s) {
-        int ans=-1;
-        int n = s.length();
-class Solution {
+class Solution {
 public:
-                ans = max(ans,x);
-            }
-        }
-        return ans;
-    }
+    int maximumLength(string s) {
+        int ans=-1;
+        int n = s.length();
+        map<string, int> f;
+        for(int i=0; i<s.length(); i++){
+            for(int j=i; j<s.length(); j++){
+                string a;
+                for(int k = i; k<=j; k++){
+                    a.push_back(s[k]);
+                }
+                set<char> x;
+                for(int l=0; l<a.length(); l++){
+                    x.insert(a[l]);
+                }
+                if(x.size() == 1){
+                    f[a]++;
+                }
+            }
+        }
+        for(auto i: f){
+            if(i.second >= 3){
+                int x=i.first.length();
+                ans = max(ans,x);
+            }
+        }
+        return ans;
+    }
 };
